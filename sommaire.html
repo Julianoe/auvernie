@@ -17,7 +17,8 @@
 
 	<INCLURE{fond=inclure/header,home=oui} />
 	<INCLURE{fond=inclure/nav,env} />
-	
+	[(#INCLURE{fond=modeles/carte_gis,zoom=8,limit=100,scale=oui})]
+
 	<div class="main">
 		<div class="wrapper hfeed">
 		<div class="content" id="content">
@@ -25,11 +26,11 @@
 			<INCLURE{fond=inclure/recents,env,ajax} />
 		</div><!--.content-->
 		</div><!--.wrapper-->
-		
+
 		<div class="aside">
 			<INCLURE{fond=inclure/navsub} />
 			#FORMULAIRE_RECHERCHE
-			
+
 			[(#REM) Breves ]
 			<B_breves>
 			<div class="menu menu_breves">
@@ -45,7 +46,7 @@
 				</ul>
 			</div>
 			</B_breves>
-			
+
 			[(#REM) Liens des forums ]
 			<B_forums_liens>
 			<div class="menu menu_comments">
@@ -57,7 +58,7 @@
 				</ul>
 			</div>
 			</B_forums_liens>
-			
+
 			[(#REM) Sur le Web ]
 			<B_syndic>
 			<div class="menu">
@@ -69,13 +70,27 @@
 				</ul>
 			</div>
 			</B_syndic>
-			
+
 			#FORMULAIRE_INSCRIPTION
 		</div><!--.aside-->
 	</div><!--.main-->
-	
+
+	<footer>
+		<B_agenda>
+			<h3><:agenda:></h3>
+			<dl>
+			<BOUCLE_agenda(EVENEMENTS){age<0}{par date}{statut=publie}>
+			<dt>#TITRE</dt>
+			[<dd>(#DATE_DEBUT|Agenda_affdate_debut_fin{#DATE_FIN,#HORAIRE})</dd>]
+			<dd>#LIEU</dd>
+			<dd>#DESCRIPTIF</dd>
+			</BOUCLE_agenda>
+			</dl>
+		</B_agenda>
+	</footer>
+
 	<INCLURE{fond=inclure/footer,self=#SELF} />
-	
+
 </div><!--.page-->
 </body>
 </html>

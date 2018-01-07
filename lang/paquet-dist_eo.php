@@ -13,5 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'dist_description' => 'Skeletaro distribuita kun SPIP 3.',
 	'dist_slogan' => 'Defaŭltaj skeletoj de SPIP 3'
 );
-
-?>
