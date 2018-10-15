@@ -18,49 +18,49 @@
   .layer-0 {
     top: -10%;
     z-index: 5;
-    background: #dbf0ff url('.../img/parallax/ban7.jpg');
+    background: #dbf0ff url('../img/parallax/ban7.jpg');
     background-size: cover;
   }
   .layer-1 {
     top: 0px;
     z-index: 6;
-    background-image: url('.../img/parallax/ban6.png');
+    background-image: url('../img/parallax/ban6.png');
   }
   .layer-2 {
     top: 0px;
     z-index: 10;
-    background-image: url('.../img/parallax/ban5.png');
+    background-image: url('../img/parallax/ban5.png');
   }
   .layer-3 {
     top: 0px;
     z-index: 15;
-    background-image: url('.../img/parallax/ban4.png');
+    background-image: url('../img/parallax/ban4.png');
   }
   .layer-4 {
     top: 0px;
     z-index: 20;
     height: 100vh;
-    background-image: url('.../img/parallax/ban3.png');
+    background-image: url('../img/parallax/ban3.png');
   }
   .layer-5 {
     top: 0px;
     z-index: 25;
     height: 100vh;
-    background-image: url('.../img/parallax/ban2.png');
+    background-image: url('../img/parallax/ban2.png');
   }
 
   .layer-6 {
     top: 0px;
     z-index: 30;
     height: 100vh;
-    background-image: url('.../img/parallax/ban1.png');
+    background-image: url('../img/parallax/ban1.png');
   }
 
   .layer-7 {
     top: 0px;
     z-index: 35;
     height: 111vh;
-    background-image: url('.../img/parallax/ban0.png');
+    background-image: url('../img/parallax/ban0.png');
   }
 
 
